@@ -7,16 +7,20 @@
 </head>
 <body>
     <script>
-        function add(a,b){
-            let sum=a+b;
-            document.write(sum+"<br>");
-        }
+        // function add(a,b){
+        //     let sum=a+b;
+        //     document.write(sum+"<br>");
+        // }
         function sub(a,b){
             let sub=a-b;
             document.write(sub+"<br>");
         }
-        add(10,20);
+        function add(a,b){
+            return a+b;
+        }
         sub(20,10);
+        let sum=add(90,100);
+        document.write(sum);
 
 
     </script>
