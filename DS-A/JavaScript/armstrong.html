@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let a=prompt("Enter a number:");
+            let b=a;
+            let t=a;
+            let count=0;
+            while(a>0){
+               a=Math.floor(a/10);
+               count=count+1;
+            }
+            let arm=0;
+            while(b>0)
+            {
+                let r=b%10;
+                arm=arm+Math.pow(r,count);
+                b=Math.floor(b/10);
+
+            }
+            if(arm==t)
+            {
+                alert("Armstrong number");
+            }
+            else{
+                alert("Not Armstrong number");
+            }
+            
+        
+    </script>
+    
+</body>
+</html>
