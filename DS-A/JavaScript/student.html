@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students=[
+            {
+                name: "Majnu",
+                branch:"CSE",
+
+            },
+            {
+                name: "Jane",
+                branch:"ECE",
+                isPassed: false
+            },
+            {
+                name: "Nakul",
+                branch:"CSE",
+                isPassed: true
+            }
+        ];
+        givebranch=prompt("Enter the branch you want to filter");
+        const filteredStudents=students.filter((student)=>student.branch==givebranch);
+        document.write("<h1>Students in " + givebranch + " branch:</h1>");
+        for (let i = 0; i < filteredStudents.length; i++) {
+            document.write("<p>Name: " + filteredStudents[i].name + "</p>");
+            document.write("<p>Branch: " + filteredStudents[i].branch + "</p>");
+            document.write("<p>Passed: " + (filteredStudents[i].isPassed ? "Yes" : "No") + "</p>");
+        }
+
+
+
+    </script>
+</body>
+</html>
